@@ -1,0 +1,72 @@
+.card {
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  color: #fff;
+  border: 1px solid transparent;
+
+  &:before {
+    content: "";
+    position: relative;
+    border-radius: 10px;
+    display: block;
+    width: 70%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+    top: 15%;
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  &--dark-blue {
+    background-color: #22356f;
+  }
+
+  &--blue {
+    background-color: #0052c1;
+  }
+
+  &--picture {
+    background-image: url(../images/joanna-kosinska-340748.png);
+  }
+
+  &--light-blue {
+    background-color: #62d0df;
+  }
+
+  &--sky-blue {
+    background-color: #dee1ff;
+  }
+
+  &--purple {
+    background-color: #8f00ff;
+  }
+
+  &--green {
+    background-color: #c4e769;
+  }
+
+  &--pink {
+    background-color: #ffe2de;
+  }
+
+  &__title {
+    padding: 20% 22%;
+
+    &--new-line {
+      word-spacing: 80px;
+    }
+
+    &:before {
+      content: "";
+      position: relative;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-color: #e9b730;
+      top: 20px;
+      right: 25px;
+    }
+  }
+}

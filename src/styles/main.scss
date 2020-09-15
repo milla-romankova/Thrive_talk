@@ -1,7 +1,27 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+@import "_fonts";
+@import "card";
+@import "grid";
+@import "helpareas";
+@import "info-card";
+@import "additional";
+@import "contact-us";
+@import "footer";
 
-body {
-  background: $c-gray;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit", Helvetica, sans-serif;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
 }

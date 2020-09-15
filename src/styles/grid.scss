@@ -1,0 +1,9 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, $card-width);
+  justify-content: center;
+
+  &__card {
+    height: $card-width;
+  }
+}

@@ -1,0 +1,16 @@
+.help-areas {
+  position: relative;
+  padding-bottom: 70px;
+
+  &__row {
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__card {
+    width: 360px;
+    height: 360px;
+  }
+}

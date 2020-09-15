@@ -1,0 +1,57 @@
+.additional {
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    width: $card-width;
+    height: 800px;
+  }
+
+  &__article {
+    width: $card-width*2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: $card-width*0.2;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #22356f;
+  }
+
+  &__text {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    width: 70%;
+    color: #22356f;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+
+    color: #fab63e;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid transparent;
+
+    padding: 30px 10px;
+    width: 200px;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover {
+      background-color: #fab63e;
+      color: white;
+    }
+  }
+}
