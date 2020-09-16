@@ -1,0 +1,20 @@
+.page {
+  background-color: $c-gray;
+
+  &__header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__main {
+    max-width: 1440px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  &__footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+  }
+}

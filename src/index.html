@@ -6,15 +6,15 @@
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <header class="header">
+  <body class="page">
+    <header class="page__header header">
       <div class="header__top">
         <div class="header__logo logo">Thrivetalk</div>
 
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link  nav__link--active">Home</a>
+              <a href="#" class="nav__link  nav__link--is-active">Home</a>
             </li>
 
             <li class="nav__item">
@@ -22,7 +22,7 @@
             </li>
 
             <li class="nav__item">
-              <a href="#services" class="nav__link">Services</a>
+              <a href="#help" class="nav__link">Services</a>
             </li>
 
             <li class="nav__irem">
@@ -31,41 +31,46 @@
           </ul>
         </nav>
 
-        <button class="header__button button "></button>
+        <button class="header__button button">Contact us</button>
       </div>
 
-      <div class="info">
-        <h1>Thrivetalk</h1>
-        <h2 class="info__title">Helping you thrive in all areas of life</h2>
-        <p class="info__text">Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</p>
-        <div class="info__buttons">
-          <button class="button button--is active">Who am i</button>
-          <button class="button">What do i do</button>
+      <h1 class="header__logo">Thrivetalk</h1>
+
+      <div class="header__promo">
+        <h2 class="header__promo-title">Helping you thrive in all areas of life</h2>
+        <p class="header__promo-text">Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</p>
+        <div class="header__links">
+          <a class="header__link header__link--is-active" href="#">Who am i</a>
+          <a class="header__link" href="#help">What do i do</a>
         </div>
       </div>
     </header>
 
-    <main class="main">
-      <section class="section introduction">
+    <main class="page__main main">
+      <section class="main__introduction introduction">
         <article class="introduction__article">
           <h3 class="introduction__title">Why Thrive?</h3>
-          <p class="inctroduction__text">
-            <strong>Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right therapist?</strong>
+          <p class="introduction__text">
+            <strong class="introduction__strong-text">
+              Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right therapist?
+            </strong>
             Here at ThriveTalk, our licensed therapists provide the same quality care you would get in office from anywhere you can access your laptop or mobile phone. Become your best self with ThriveTalk. Start therapy now with a licensed therapist!
           </p>
-          <img
-            src="images/christopher-campbell-40367.png"
-            alt="young woman is stretching"
-            class="section__img">
         </article>
+        <img
+          class="introduction__img"
+          src="images/christopher-campbell-40367.png"
+          alt="young woman is stretching"
+        >
       </section>
 
-      <section class="section about">
+      <section class="main__about about" id="about">
         <h3 class="about__title">About us</h3>
         <p class="about__text">We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental wellness issue we’re here to help. Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</p>
       </section>
 
-      <section class="section help-areas">
+      <section class="main__help-areas help-areas" id="help">
+        <h3 class="help-areas__title">We can help you with</h3>
         <div class="help-areas__row">
           <div class="help-areas__card card card--pink">
             <h4 class="card__title">Weight Lifting</h4>
@@ -133,7 +138,7 @@
         </div>
       </section>
 
-      <section class="additional">
+      <section class="main__additional additional">
         <img
           src="images/linkedin-sales-navigator-402831.png"
           alt="two men communicating on the yellow sofa"
@@ -146,7 +151,7 @@
         </article>
       </section>
 
-      <section class="section contact-us">
+      <section class="main__contact-us contact-us">
         <article class="contact-us__article">
           <h3 class="contact-us__title">Contact us</h3>
           <p class="contact-us__moto">Ready. Set. Smile</p>
@@ -161,7 +166,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="page__footer footer">
       <div class="footer__top">
         <img
           src="images/autumn-goodman-242825.png"

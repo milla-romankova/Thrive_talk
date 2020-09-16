@@ -1,9 +1,21 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, $card-width);
+  grid-template-columns: repeat(3, minmax(230px, $card-width));
   justify-content: center;
+
+  @media(max-width:700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   &__card {
     height: $card-width;
+
+    @media(max-width:1440px) {
+      height: 33vw;
+    }
+
+    @media(max-width:700px) {
+      height: 50vw;
+    }
   }
 }

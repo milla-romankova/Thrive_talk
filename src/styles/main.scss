@@ -7,6 +7,12 @@
 @import "additional";
 @import "contact-us";
 @import "footer";
+@import "header";
+@import "introduction";
+@import "nav";
+@import "about";
+@import "button";
+@import "page";
 
 * {
   box-sizing: border-box;
@@ -14,6 +20,7 @@
 
 html {
   font-family: "Larsseit", Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -21,7 +28,9 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+ul,
+li {
   margin: 0;
   padding: 0;
 }

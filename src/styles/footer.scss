@@ -1,20 +1,42 @@
 .footer {
   &__top {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    height: 380px;
+
+    @media (max-width: 650px) {
+      justify-content: center;
+      padding: 0 11%;
+    }
   }
 
   &__img {
-    width: 570px;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
   }
 
   &__info {
-    width: 870px;
+    width: 57%;
     display: grid;
-    grid-template-columns: repeat(3, 210px);
+    grid-template-columns: repeat(3, minmax(100px, 240px));
     gap: 40px;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 80px;
+
+    @media (max-width: 900px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
+      grid-template-columns: repeat (3, 1fr);
+    }
   }
 
   &__title {
@@ -43,7 +65,12 @@
     line-height: 23px;
     letter-spacing: -0.01em;
     text-decoration: none;
-    color: #006dff;
+    color: $c-blue;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $c-dark-blue;
+    }
 
     &--grey {
       color: rgba(34, 53, 111, 0.5);
@@ -51,14 +78,13 @@
   }
 
   &__bottom {
-    margin: 0 auto;
+    display: block;
+    padding: 0 11%;
+    line-height: 80px;
     height: 80px;
     background: #62d0df;
-    width: 1440px;
     font-size: 14px;
-    line-height: 11px;
     letter-spacing: -0.01em;
-    padding: 32px 200px;
     color: #fff;
   }
 }
