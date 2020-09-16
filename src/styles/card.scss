@@ -1,26 +1,32 @@
 .card {
   font-size: 32px;
   letter-spacing: -0.01em;
-  color: #fff;
+  color: $c-white;
+
   border: 1px solid transparent;
+
+  @media(max-width:450px) {
+    font-size: $header-text-size;
+  }
 
   &:before {
     content: "";
-    display: block;
     position: relative;
     top: 15%;
     margin: 0 auto;
+
+    display: block;
     width: 70%;
     height: 1px;
 
     border-radius: 10px;
-    background-color: white;
+    background-color: $c-white;
 
-    box-shadow: inset 0 -1px 0 #fff;
+    box-shadow: inset 0 -1px 0 $c-white;
   }
 
   &--dark-blue {
-    background-color: #22356f;
+    background-color: $c-dark-blue;
   }
 
   &--blue {
@@ -32,23 +38,23 @@
   }
 
   &--light-blue {
-    background-color: #62d0df;
+    background-color: $c-light-blue;
   }
 
   &--sky-blue {
-    background-color: #dee1ff;
+    background-color: $c-sky-blue;
   }
 
   &--purple {
-    background-color: #8f00ff;
+    background-color: $c-purple;
   }
 
   &--green {
-    background-color: #c4e769;
+    background-color: $c-green;
   }
 
   &--pink {
-    background-color: #ffe2de;
+    background-color: $c-pink;
   }
 
   &__title {
@@ -61,14 +67,23 @@
     &:before {
       content: "";
       position: relative;
-      border: 1px solid transparent;
-      border-radius: 50%;
+      top: 20px;
+      right: 25px;
+
       display: block;
       width: 12px;
       height: 12px;
-      background-color: #e9b730;
-      top: 20px;
-      right: 25px;
+
+      background-color: $c-orange;
+      border: 1px solid transparent;
+      border-radius: 50%;
+
+      @media(max-width: 700px) {
+        top: 16px;
+
+        width: 8px;
+        height: 8px;
+      }
     }
   }
 }

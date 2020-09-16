@@ -4,7 +4,7 @@
   &__title {
     margin-bottom: 25px;
 
-    font-size: 16px;
+    font-size: $middle-text-size;
     line-height: 19px;
     letter-spacing: 0.06em;
     color: rgba(34, 53, 111, 0.5);
@@ -17,6 +17,12 @@
 
     display: flex;
     gap: 0;
+    transition: transform 0.5s;
+    cursor: pointer;
+
+    :hover {
+      transform: translateY(-20%);
+    }
 
     @media(max-width:700px) {
       flex-wrap: wrap;

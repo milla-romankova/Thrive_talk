@@ -2,9 +2,21 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(230px, $card-width));
   justify-content: center;
+  transition: opacity 0.5s;
+  cursor: pointer;
+
+  :hover {
+    opacity: 0.8;
+  }
 
   @media(max-width:700px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--vw-little {
+    @media (max-width: 550px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__card {

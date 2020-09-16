@@ -3,17 +3,22 @@
   align-items: center;
   padding: 22% 20%;
 
+  @media(max-width: 700px) {
+    padding: 10% 10% 0;
+    height: 180px;
+    text-align: center;
+  }
+
   &__title {
     padding-bottom: 28px;
+
     font-size: 28px;
     line-height: 33px;
     letter-spacing: -0.03em;
-
-    color: #22356f;
   }
 
   &__text {
-    font-size: 16px;
+    font-size: $middle-text-size;
     line-height: 25px;
     letter-spacing: -0.03em;
     color: rgba(34, 53, 111, 0.5);

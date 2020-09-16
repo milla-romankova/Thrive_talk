@@ -3,32 +3,44 @@
   padding: 150px 11% 70px;
 
   @media(max-width: 1000px) {
-    padding-top: 100px;
+    padding-top: 70px;
+  }
+
+  @media(max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
   }
 
   &__title {
     width: 30%;
 
-    font-size: 16px;
+    font-size: $middle-text-size;
     line-height: 23px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #22356f;
+
+    @media(max-width: 500px) {
+      width: 100%;
+      padding-bottom: 20px;
+    }
   }
 
   &__text {
     width: 55%;
-    font-size: 24px;
+
+    font-size: $header-text-size;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 0.01em;
 
-    color: #22356f;
-
     @media(max-width: 1000px) {
       width: 70%;
-      font-size: 16px;
+      font-size: $middle-text-size;
       line-height: 24px;
+    }
+
+    @media(max-width: 500px) {
+      width: 100%;
     }
   }
 }

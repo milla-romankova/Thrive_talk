@@ -3,6 +3,12 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
+
+    @media(max-width:700px) {
+      position: absolute;
+      left: calc(50% - 140px);
+      top: 20px;
+    }
   }
 
   &__item {
@@ -11,6 +17,7 @@
 
   &__link {
     font-size: 14px;
+    font-weight: bold;
     line-height: 16px;
     color: $c-dark-blue;
     text-decoration: none;

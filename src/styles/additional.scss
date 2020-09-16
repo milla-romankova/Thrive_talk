@@ -1,10 +1,9 @@
 .additional {
   display: flex;
   justify-content: center;
-  height: 800px;
 
-  @media (max-width:1200px) {
-    height: 550px;
+  @media(max-width:700px) {
+    flex-direction: column;
   }
 
   &__img {
@@ -14,8 +13,9 @@
     object-fit: cover;
     object-position: center;
 
-    @media (max-width:1200px) {
-      height: 550px;
+    @media (max-width:700px) {
+      height: $img-smallvw-height;
+      width: 100%;
     }
   }
 
@@ -25,40 +25,43 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 5vw;
+
+    @media (max-width:1200px) {
+      width: 100%;
+      gap: 30px;
+    }
   }
 
   &__title {
-    font-size: 16px;
+    font-size: $middle-text-size;
     line-height: 12px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $c-dark-blue;
   }
 
   &__text {
-    font-size: 36px;
+    font-size: $big-title-size;
     font-weight: bold;
     line-height: 53px;
     letter-spacing: -0.01em;
-    color: $c-dark-blue;
 
-    @media (max-width:1200px) {
+    @media (max-width:1000px) {
       line-height: 40px;
-    }
-
-    @media (max-width:900px) {
-      font-size: 26px;
+      font-size: $header-text-size;
     }
   }
 
   &__link {
-    font-size: 16px;
+    display: block;
+
+    font-size: $middle-text-size;
+    font-weight: bold;
     line-height: 23px;
     letter-spacing: 0.1em;
     color: $c-yellow;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
+
     border: 1px solid transparent;
 
     transition: color 0.3s;
