@@ -21,6 +21,7 @@
 
   &__card {
     height: $card-width;
+    transition: opacity 0.3s;
 
     @media(max-width:1440px) {
       height: 33vw;
