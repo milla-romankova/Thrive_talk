@@ -3,11 +3,12 @@
   height: 50px;
 
   font-size: 14px;
-  line-height: 16px;
+  line-height: 50px;
   text-align: center;
   font-weight: bold;
-  color: #fff;
+  color: $c-white;
   text-transform: uppercase;
+  text-decoration: none;
 
   background: #62d0fd;
   border-radius: 50px;
