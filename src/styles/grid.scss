@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(230px, $card-width));
   justify-content: center;
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
   cursor: pointer;
 
   :hover {
