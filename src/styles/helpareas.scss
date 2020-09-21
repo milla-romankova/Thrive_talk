@@ -19,11 +19,6 @@
     gap: 0;
 
     cursor: pointer;
-    transition: transform 0.3s ease-out;
-
-    :hover {
-      transform: translateY(-20%);
-    }
 
     @media(max-width:700px) {
       flex-wrap: wrap;
@@ -34,7 +29,11 @@
     width: 25%;
     height: $small-card-width;
 
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-out;
+
+    &:hover {
+      transform: translateY(-20%);
+    }
 
     @media(max-width:1440px) {
       height: 25vw;
@@ -44,5 +43,13 @@
       width: 50vw;
       height: 50vw;
     }
+  }
+}
+
+.card {
+  transition: transform 0.3s;
+
+  :hover {
+    transform: row(1.2);
   }
 }
