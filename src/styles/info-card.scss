@@ -9,12 +9,23 @@
     text-align: center;
   }
 
+  @media(min-width: 2000px) {
+    padding: 10% 10% 0;
+    height: 15vw;
+  }
+
   &__title {
     padding-bottom: 28px;
 
     font-size: 28px;
     line-height: 33px;
     letter-spacing: -0.03em;
+
+    @media(min-width: 2000px) {
+      padding-bottom: 50px;
+
+      font-size: 36px;
+    }
   }
 
   &__text {
@@ -22,5 +33,10 @@
     line-height: 25px;
     letter-spacing: -0.03em;
     color: rgba(34, 53, 111, 0.5);
+
+    @media(min-width: 2000px) {
+      font-size: 28px;
+      line-height: 50px;
+    }
   }
 }

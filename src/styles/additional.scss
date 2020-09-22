@@ -36,6 +36,10 @@
     line-height: 12px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media (min-width:2000px) {
+      font-size: 28px;
+    }
   }
 
   &__text {
@@ -47,6 +51,11 @@
     @media (max-width:1000px) {
       line-height: 40px;
       font-size: $header-text-size;
+    }
+
+    @media (min-width:2000px) {
+      line-height: 90px;
+      font-size: $huge-title-size;
     }
   }
 
@@ -64,6 +73,10 @@
     border: 1px solid transparent;
 
     transition: color 0.3s;
+
+    @media (min-width:2000px) {
+      font-size: 28px;
+    }
 
     &:hover {
       color: $c-light-blue;

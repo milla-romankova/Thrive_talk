@@ -3,19 +3,16 @@
   @include small-font-size;
 
   &__header {
-    max-width: 1440px;
     margin: 0 auto;
   }
 
   &__main {
-    max-width: 1440px;
     margin: 0 auto;
 
     background-color: $c-white;
   }
 
   &__footer {
-    max-width: 1440px;
     margin: 0 auto;
 
     background-color: $c-white;

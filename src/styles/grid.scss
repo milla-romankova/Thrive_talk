@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(230px, $card-width));
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
   justify-content: center;
   transition: opacity 0.3s;
   cursor: pointer;
@@ -20,7 +20,7 @@
   }
 
   &__card {
-    height: $card-width;
+    height: 33vw;
     transition: opacity 0.3s;
 
     @media(max-width:1440px) {

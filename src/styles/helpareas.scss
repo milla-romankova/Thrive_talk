@@ -10,6 +10,11 @@
     color: rgba(34, 53, 111, 0.5);
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 2000px) {
+      font-size: $header-text-size;
+      margin-bottom: 75px;
+    }
   }
 
   &__row {
@@ -27,7 +32,7 @@
 
   &__card {
     width: 25%;
-    height: $small-card-width;
+    height: 25vw;
 
     transition: transform 0.3s ease-out;
 
